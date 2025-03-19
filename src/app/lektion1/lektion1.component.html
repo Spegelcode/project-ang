@@ -1,1 +1,21 @@
-<p>lektion1 works!</p>
+
+
+<h1 class="rubrik">Hello world</h1>
+
+
+<p>hejhopp detta är text</p>
+
+<p>{{ calculateArea(5, 15) }}</p>
+
+<!-- Displaying result of calculateArea(width, 5) -->
+<p>calculation: {{ calculateArea(width, height) }}</p>
+
+{{createUser("Martin", 12).name}}
+
+<p>{{createUser("Martin", 12).name}}</p>
+Items: {{ addItems(items, {name: 'book'}) }}
+<ul>
+  <li *ngFor="let item of items">
+    {{ item }}
+  </li>
+</ul>
