@@ -60,3 +60,24 @@ export enum HttpStatusCode {
 }
 
 
+
+
+
+
+  export enum HttpStatusCode {
+    Success = 200,
+    NotFound = 404
+  }
+
+  public handelResponse(statusCode: HttpStatusCode): void {
+    if (statusCode === HttpStatusCode.Success) {
+      console.log('fuck yeh');
+    }else if (statusCode === HttpStatusCode.NotFound)
+      console.log('Where am i ?');
+}
+}
+
+
+
+
+handleResponse(HttpStatusCode.Success);
